@@ -1,0 +1,36 @@
+#include<iostream>
+#include<conio.h>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+	
+	int columns;
+	int rows;
+	int counterx;
+	int countery;
+	
+	cout<<"Good Day!"<<endl<<endl;
+
+	cout<<"Enter number of rows: ";
+	cin>>rows;	
+	cout<<"Enter number of columns: ";
+	cin>>columns;
+	
+
+	for(counterx=1; counterx<=rows; counterx++)
+	{
+		
+		for(countery=1; countery<=columns; countery++)
+		{
+			cout<<" * ";
+		}
+		
+		cout<<endl;
+	}
+	
+	
+	_getch();
+	return 0;
+}
