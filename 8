@@ -1,0 +1,28 @@
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+	double number;
+	int counter=0;
+	double product;
+	
+	cout<<"Good Day!"<<endl<<endl;
+	
+	cout<<"Enter a number: ";
+	cin>>number;
+
+	cout<<endl<<"Multiplication Table of "<<number<<endl;
+		
+	while( counter<10)
+	{
+		counter++;
+		product = number * counter;
+		cout<<number<<" * "<<counter<<" = "<<product<<endl;
+	}
+
+	_getch();
+	return 0;
+}
