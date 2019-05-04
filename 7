@@ -1,0 +1,44 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+	int counter=1;
+	int sum = 0;
+	int number;
+
+	cout<<"Good Day!"<<endl<<endl;
+	
+	do
+	{
+	
+		cout<<"Enter a Number: ";
+		cin>>number;
+		
+		if (number==0)
+		{
+			break;
+		}
+		else
+		{
+			while (counter<=number)
+			{
+				sum = sum + counter;
+				counter++;
+			}
+			
+			cout<<"Sum: "<<sum<<endl<<endl;
+			sum = 0;
+			
+		
+		}
+	
+	}while(!0);
+	
+
+
+	
+	_getch();
+	return 0;
+}
