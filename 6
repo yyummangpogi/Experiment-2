@@ -1,0 +1,29 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+	int first=0;
+	int second=1;
+	int third;
+	int counter=1;
+	
+	
+	cout<<"The Fibonacci Series as follows... "<<endl;
+	cout<<first<<", "<<second;
+	
+	while( counter<=20)
+	{
+		counter++;
+		third = first + second;
+		first = second;
+		second = third;
+		
+		cout<<", "<<third;
+	}
+	
+	_getch();
+	return 0;
+}
+
