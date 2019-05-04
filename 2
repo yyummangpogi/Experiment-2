@@ -1,0 +1,43 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+	double present;
+	double totalPresent;
+	double previous;
+	double totalPrevious;
+	double amount;
+	
+	cout<<"WELCOME TO JOSHUA's WATER CONSUMPTION SERVICE!"<<endl<<endl;
+	
+	cout<<"Enter Present Water Consumption: ";
+	cin>>present;
+	cout<<"Enter Previous Water Concumption: ";
+	cin>>previous;
+	
+	totalPresent =present*1.10;
+	totalPrevious =previous*1.10;
+	
+	cout<<endl<<"Water Demand Charge : P35";
+	cout<<endl<<"Present Water Concumption: P"<<totalPresent;
+	cout<<endl<<"Previous Water Concumption: P"<<totalPrevious;
+	
+	if(previous<=0)
+	{
+		amount =totalPresent+totalPrevious+35;
+		cout<<endl<<"TOTAL WATER BILL: P"<<amount;
+	}
+	else
+	{
+		cout<<endl<<"Late Charge: P20";
+		amount =totalPresent+totalPrevious+35+20;
+		cout<<endl<<"TOTAL Water Bill: P"<<amount;
+	}
+	
+
+	
+	_getch();
+	return 0;
+}
