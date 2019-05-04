@@ -1,0 +1,79 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;	
+
+int main()
+{
+	char package;
+	int hours;   
+	
+	cout<<"WELCOME TO JOSHUA's INTERNET SERVICE PROVIDER!"<<endl<<endl;
+	
+	cout<<"Enter type of package purchased: ";
+	cin>>package;
+	
+	switch(package)
+	{
+		case 'a':
+		case 'A':
+		{
+			cout<<"Enter hours used: ";
+			cin>>hours;
+	
+			if(hours>=0 && hours<=10)
+			{
+				cout<<endl<<"Monthly Bill: P995";
+			}
+			else if(hours>10)
+			{
+				cout<<endl<<"Monthly Bill: P"<<((hours-10)*20) + 995;
+			}
+			else
+			{
+				cout<<endl<<"Invalid!";
+			}
+			
+		break;
+		
+		}
+		
+		case 'b':
+		case 'B':
+		{
+			cout<<"Enter hours used: ";
+			cin>>hours;
+			
+			if(hours>=0 && hours<=20)
+			{
+				cout<<endl<<"Monthly Bill: P1495";
+			}
+			else if(hours>20)
+			{
+				cout<<endl<<"Monthly Bill: P"<<((hours-20)*10) + 1495;
+			}
+			else
+			{
+				cout<<endl<<"Invalid!";
+			}
+			
+			break;
+		}		
+		
+		case 'c':
+		case 'C':
+		{
+			cout<<endl<<"Monthly Bill: P1995";	
+			break;
+		}
+		
+		default:
+		{
+			cout<<endl<<"Invalid Package!!!";	
+			break;
+		}
+		
+	}
+		
+	_getch();
+	return 0;
+}
