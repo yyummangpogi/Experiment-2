@@ -1,0 +1,38 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+	double first;
+	double second;
+	double third;
+	
+	cout<<"GOOD DAY!"<<endl<<endl;
+	
+	cout<<"Enter First Number: ";
+	cin>>first;
+	cout<<"Enter Second Number: ";
+	cin>>second;
+	cout<<"Enter Third Number: ";
+	cin>>third;
+	
+	if(first>=second && first>=third)
+	{
+		cout<<endl<<"The LARGEST of the three numbers is "<<first;
+	}
+	else if(second>=first && second>=third)
+	{
+		cout<<endl<<"The LARGEST of the three numbers is "<<second;
+	}
+	else
+	{
+		cout<<endl<<"The LARGEST of the three numbers is "<<third;
+	}
+	
+	
+	_getch();
+	return 0;
+	
+	
+}
